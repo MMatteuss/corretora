@@ -53,8 +53,10 @@ main {
 .mensagem {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
-    width: 100%; 
+    width: 100%;
+    padding: 20px;
 }
 
 /* Estilo para cada bloco de mensagem */
@@ -63,20 +65,23 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo para o conteúdo dentro de cada bloco */
-.bloco-mensagem .conteudo {
-    max-width: 800px;
-    margin: 0 auto;
+/* Efeito de crescimento sutil ao passar o mouse */
+.bloco-mensagem:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para os títulos */
 .bloco-mensagem h3 {
     color: #004a8d;
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 15px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -84,6 +89,7 @@ main {
 .bloco-mensagem p {
     margin-bottom: 20px;
     font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Estilo para os botões */
@@ -93,22 +99,13 @@ main {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
+    margin-top: 10px;
 }
 
 .bloco-mensagem a:hover {
     background-color: #218838;
-}
-
-/* Alinhamento à esquerda */
-.bloco-mensagem.esquerda .conteudo {
-    text-align: left;
-}
-
-/* Alinhamento à direita */
-.bloco-mensagem.direita .conteudo {
-    text-align: right;
 }
 
 /* Estilo para a coluna */
