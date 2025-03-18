@@ -1,0 +1,201 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav .btns {
+    display: flex;
+    flex-direction: column; /* Botões um abaixo do outro */
+    align-items: center; /* Centraliza os botões horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px;
+}
+
+nav .btns a {
+    color: #fff;
+    background-color: #28a745; /* Verde */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 80%; /* Largura dos botões */
+    text-align: center; /* Centraliza o texto dentro dos botões */
+}
+
+nav .btns a:hover {
+    background-color: #218838; /* Verde mais escuro */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para a seção de mensagens */
+.mensagem {
+    display: flex;
+    flex-direction: column; /* Coloca as divs uma abaixo da outra */
+    gap: 20px; /* Espaçamento entre as divs */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo para cada bloco de mensagem */
+.bloco-mensagem {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Estilo para o conteúdo dentro de cada bloco */
+.bloco-mensagem .conteudo {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Estilo para os títulos */
+.bloco-mensagem h3 {
+    color: #004a8d;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os parágrafos */
+.bloco-mensagem p {
+    margin-bottom: 20px;
+}
+
+/* Estilo para os botões */
+.bloco-mensagem a {
+    color: #fff;
+    background-color: #28a745; /* Verde */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block; /* Faz o botão ocupar apenas o espaço necessário */
+}
+
+.bloco-mensagem a:hover {
+    background-color: #218838; /* Verde mais escuro */
+}
+
+/* Alinhamento à esquerda */
+.bloco-mensagem.esquerda .conteudo {
+    text-align: left;
+}
+
+/* Alinhamento à direita */
+.bloco-mensagem.direita .conteudo {
+    text-align: right;
+}
+
+/* Estilo para a coluna */
+.coluna {
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px auto; /* Centraliza a coluna na página */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+/* Estilo para o título "Site Seguro" */
+.coluna h2 {
+    color: #004a8d; /* Azul escuro */
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Estilo para o parágrafo "Nossos clientes são importantes para nós." */
+.coluna p {
+    color: #333; /* Cor do texto padrão */
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Estilo para o link do WhatsApp */
+.coluna a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745; /* Verde */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Estilo para a imagem do WhatsApp */
+.coluna a img {
+    width: 20px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o texto "Atendimento Energia Eficiente" */
+.coluna .verde {
+    color: #28a745; /* Verde */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os textos "Horas", "Aberto hoje" e "07:00 – 20:00" */
+.coluna p:last-of-type {
+    color: #666; /* Cinza escuro */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Estilo para o horário "07:00 – 20:00" */
+.coluna p:last-of-type {
+    font-weight: bold;
+    color: #333; /* Cor mais escura para o horário */
+}
+
+/* Estilo para o ícone de seta ▼ */
+.coluna .seta {
+    font-size: 12px;
+    color: #666; /* Cinza escuro */
+    margin-left: 5px;
+}
+
+footer {
+    background-color: #363636;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
