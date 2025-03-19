@@ -38,7 +38,7 @@ nav .btns {
 
 nav .btns a {
     color: #fff;
-    background-color: #28a745;
+    background-color: #649438;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -90,7 +90,7 @@ main {
 
 /* Estilo para os títulos */
 .bloco-mensagem h3 {
-    color: #004a8d;
+    color: #226e03;
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: bold;
@@ -106,7 +106,7 @@ main {
 /* Estilo para os botões */
 .bloco-mensagem a {
     color: #fff;
-    background-color: #28a745;
+    background-color: #649438;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -116,7 +116,7 @@ main {
 }
 
 .bloco-mensagem a:hover {
-    background-color: #218838;
+    background-color: #34b44f;
 }
 
 /* Estilo para a coluna */
@@ -128,7 +128,7 @@ main {
 
 /* Estilo para o título "Site Seguro" */
 .coluna h2 {
-    color: #004a8d; 
+    color: #00804f; 
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -147,7 +147,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #28a745;
+    background-color: #649438;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -165,7 +165,7 @@ main {
 
 /* Estilo para o texto "Atendimento Energia Eficiente" */
 .coluna .verde {
-    color: #28a745;
+    color: #649438;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -248,7 +248,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #28a745; /* Verde do WhatsApp */
+    background-color: #649438; /* Verde do WhatsApp */
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
