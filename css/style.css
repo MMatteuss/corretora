@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
+.ponta{
+    cursor: pointer;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
     font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
 }
 
 /* Estilo para a imagem no topo */
@@ -40,9 +49,11 @@ nav .btns a {
 
 nav .btns a:hover {
     background-color: #218838;
+    transform: scale(1.03);
 }
 
 main {
+    background-color: #e6e6e6;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -229,4 +240,44 @@ footer p {
     .coluna p:last-of-type {
         font-size: 16px;
     }
+}
+
+/* Animação butão */
+.whatsapp-button {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745; /* Verde do WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover{
+    background-color: #218838; /* Verde um pouco mais escuro */
+}
+
+/* Estilo do ícone do WhatsApp */
+.whatsapp-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Animação de tremer */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Aplicar a animação ao passar o mouse */
+.whatsapp-button:hover {
+    animation: shake 0.5s ease;
 }

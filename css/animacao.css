@@ -1,0 +1,26 @@
+/* Estilos base para as animações */
+.animated-left, .animated-right, .animated-up {
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Animação para elementos que vêm da esquerda */
+.animated-left {
+    transform: translateX(-100px); /* Começa fora da tela, à esquerda */
+}
+
+/* Animação para elementos que vêm da direita */
+.animated-right {
+    transform: translateX(100px); /* Começa fora da tela, à direita */
+}
+
+/* Animação para elementos que vêm de baixo */
+.animated-up {
+    transform: translateY(50px); /* Começa fora da tela, abaixo */
+}
+
+/* Classe que ativa as animações */
+.animate {
+    opacity: 1; /* Torna o elemento visível */
+    transform: translateX(0) translateY(0); /* Move o elemento para a posição original */
+}
